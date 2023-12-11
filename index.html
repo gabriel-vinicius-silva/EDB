@@ -2,33 +2,45 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Login EDB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Login - EDB</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-  <script src="sketch.js"></script>
+  <!-- Adicione aqui seus outros arquivos de estilo, scripts, etc. -->
 </head>
 <body>
 
-  <div class="container">
+  <header>
+    <h1>EDB</h1>
+    <!-- Adicione aqui outros elementos do cabeçalho se necessário -->
+  </header>
 
-    <h1>Login EDB</h1>
+  <main>
+    <div id="bemVindo">
+      <h2>Bem-vindo </h2>
+    </div>
 
-    <form action="/login/process" method="post">
+    <div id="loginForm">
+      <form action="/processar-login" method="post">
+        <label for="username">Telefone:</label>
+        <input type="text" id="username" name="username" placeholder="Digite seu telefone" required>
 
-      <div class="form-group">
-        <label for="username">Usuário</label>
-        <input type="text" name="username" id="username" class="form-control" required placeholder="Digite seu usuário">
-      </div>
+        <label for="password">Chave:</label>
+        <input type="password" id="password" name="password" placeholder="Digite a chave de acesso" required>
 
-      <div class="form-group">
-        <label for="password">Senha</label>
-        <input type="password" name="password" id="password" class="form-control" required placeholder="Digite sua senha">
-      </div>
+        <button type="submit">Registrar Aparelho</button>
+      </form>
+    </div>
 
-      <button type="submit" class="btn btn-primary">Login</button>
+    <div class="politica">
+      <a href="#politica" class="politica-link">Politica de Privacidade</a>
+    </div>
 
-    </form>
+  </main>
 
-  </div>
+  <footer>
+    <!-- Adicione aqui o conteúdo do rodapé, se necessário -->
+  </footer>
 
 </body>
 </html>

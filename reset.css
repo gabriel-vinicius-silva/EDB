@@ -1,0 +1,99 @@
+/* Reset CSS */
+
+/* Box sizing border-box para todos os elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remova o espaçamento entre os elementos */
+html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* Adiciona estilo padrão para o body */
+body {
+  line-height: 1;
+}
+
+/* Corrige problemas de renderização no IE 11 */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Corrige problemas de fonte e tamanho no Safari 10+ */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Limpa as bordas das imagens dentro de links */
+a img {
+  border: none;
+}
+
+/* Limpa estilos padrão para listas */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Limpa estilos padrão para elementos inline */
+abbr[title], dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+/* Corrige espaçamento em blocos no IE 8 */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* Corrige problemas de legibilidade quando `pre` é utilizado dentro de `p` */
+pre {
+  white-space: pre-wrap;
+}
+
+/* Corrige a exibição de algumas fontes no Firefox 4+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* Corrige problemas com algumas fontes no Safari 5.1+ e iOS */
+small {
+  font-size: 80%;
+}
+
+/* Corrige a exibição de tabelas no IE 8 e 9 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Corrige o tamanho da fonte e espaçamento em input e button no Safari */
+input, button, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* Corrige problemas de layout no Chrome quando um input recebe foco */
+input:focus {
+  outline: none;
+}
