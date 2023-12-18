@@ -6,6 +6,7 @@
   <title>Sistema de Login - EDB</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <script src="sketch.js"></script>
   <!-- Adicione aqui seus outros arquivos de estilo, scripts, etc. -->
 </head>
 <body>
@@ -23,7 +24,7 @@
     <div id="loginForm">
       <form action="/processar-login" method="post">
         <label for="username">Telefone:</label>
-        <input type="text" id="username" name="username" placeholder="Digite seu telefone" required>
+        <input type="number" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
 
         <label for="password">Chave:</label>
         <input type="password" id="password" name="password" placeholder="Digite a chave de acesso" required>
